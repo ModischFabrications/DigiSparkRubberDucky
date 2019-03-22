@@ -1,8 +1,8 @@
 # Usage
 Plugging the device into a USB-Port will:
-1: Connect for programming, waiting 6 seconds
-2: Disconnect
-3: Connect with user program running
+1. Connect as programmable device, waiting 6 seconds
+2. Disconnect
+3. Connect as this program
 
 # Installation:
 1. Install PlatformIO as usual
@@ -13,9 +13,9 @@ Plugging the device into a USB-Port will:
 1. Pull-out device, start upload, insert again
 
 # Hotfix for Library:
-(https://github.com/platformio/platform-atmelavr/issues/113)
-`DigiKeyboard.h`:
-Change from
+(https://github.com/platformio/platform-atmelavr/issues/113)  
+`DigiKeyboard.h`:  
+Change from  
 ```
 const PROGMEM char usbHidReportDescriptor[USB_CFG_HID_REPORT_DESCRIPTOR_LENGTH] = { /* USB report descriptor */
   0x05, 0x01,                    // USAGE_PAGE (Generic Desktop) 
