@@ -23,7 +23,7 @@ void setup() {
 
 void loop() {
   digitalWrite(ONBOARD, HIGH);
-  DigiKeyboard.println("Hello Digispark!");
+  DigiKeyboard.sendKeyStroke(KEY_L, MOD_GUI_LEFT);
   digitalWrite(ONBOARD, LOW);
-  DigiKeyboard.delay(10 * 1000);   // make sure communication is continued
+  DigiKeyboard.delay(30 * 1000);   // make sure communication is continued
 }
